@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(white, pink);
+  font-size: 5rem;
+}
+#audio-controls {
+  position: fixed;
+  bottom: 0;
+  left:  0;
+  right: 0;
+  background: #aaaaaaaa;
+  padding:  2rem;
+}
+#audio-toggle {
+  font-size: 2rem;
+  background: #000;
+}
+#audio-toggle .off,
+.disabled #audio-toggle .on {
+  display:  none;
+}
+.disabled #audio-toggle .off,
+#audio-toggle .on {
+  display:  block;
+}
+table, tr, td {
+  margin: 0;
+  padding: 0;
+}
+td {
+  text-align: center;
+  width: 12.5vw;
+  padding: 2rem 0;
+}
+td.emoji {
+  transition: transform 100ms;
+}
+.major-1 td.emoji {
+  transform: scale(2)
+}
+
+.major-2 td.emoji {
+  transform: rotate(45deg);
+}
+
+.major-4 td.emoji {
+  transform: rotate(-45deg);
+}
