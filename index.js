@@ -16,7 +16,14 @@ document.addEventListener("DOMContentLoaded", function(){
     const minorBeat = minorBeatNumber % 4 + 1;
     const offBeat = majorBeatNumber % 3 + 1;
 
-    body.className = `major-${ majorBeat } minor-${ minorBeat } off-${ offBeat }`
+    body.className = `major-${ majorBeat } minor-${ minorBeat } off-${ offBeat }`;
+
+    body.style.background = ({
+     "1": "pink", 
+     "2": "yellow", 
+     "3": "orange", 
+     "4": "#CCCCFF", 
+    })[minorBeat];
 
 
   })
